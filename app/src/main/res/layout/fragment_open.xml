@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".OpenFragment">
 
     <ScrollView
@@ -23,19 +25,80 @@
                 android:layout_centerVertical="true"
                 android:scaleType="centerCrop"
                 android:src="@mipmap/ic_launcher" />
-            <TextView
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/hehe"
-                android:text="This is Demo Name"
-                android:textStyle="bold"
-                android:textSize="25sp"
-                android:textColor="#000"
-                android:layout_toRightOf="@id/img1"
-                android:layout_margin="10dp"/>
+                android:padding="10dp">
 
+                <TextView
+                    android:id="@+id/hehe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is Demo Name"
+                    android:textColor="#000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scientific Name: "
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hehe" />
+
+                <TextView
+                    android:id="@+id/sciName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintStart_toEndOf="@+id/textsc"
+                    app:layout_constraintTop_toBottomOf="@+id/hehe" />
+
+                <TextView
+                    android:id="@+id/textbeh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Behaviour: "
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sciName" />
+
+                <TextView
+                    android:id="@+id/typeData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toEndOf="@+id/textbeh"
+                    app:layout_constraintTop_toBottomOf="@+id/sciName" />
+
+                <TextView
+                    android:id="@+id/descText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textbeh" />
+
+                <TextView
+                    android:id="@+id/descData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descText" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </LinearLayout>
     </ScrollView>
-</FrameLayout>
+</LinearLayout>

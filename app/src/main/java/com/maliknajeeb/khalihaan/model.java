@@ -2,15 +2,16 @@ package com.maliknajeeb.khalihaan;
 
 
 public class model {
-    String name, sciname, type, photo;
+    String name, sciname, type, photo, desc;
     model(){
 
     }
-    public model(String name, String sciname, String type, String photo) {
+    public model(String name, String sciname, String type, String photo, String desc) {
         this.name = name;
         this.sciname = sciname;
         this.type = type;
         this.photo = photo;
+        this.desc=desc;
     }
 
     public String getName() {
@@ -43,6 +44,14 @@ public class model {
 
     public void setPhoto(String photo) {
         this.photo = photo;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
 

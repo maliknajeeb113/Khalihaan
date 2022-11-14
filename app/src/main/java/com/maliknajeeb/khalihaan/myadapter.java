@@ -36,7 +36,9 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                 Bundle bd =new Bundle();
                 bd.putString("name", model.getName().toString());
                 bd.putString("sciname", model.getSciname().toString());
-                bd.putString("image",model.getPhoto());
+                bd.putString("photo",model.getPhoto());
+                bd.putString("type",model.getType());
+                bd.putString("desc",model.getDesc());
 
                 OpenFragment openFragment = new OpenFragment();
                 openFragment.setArguments(bd);
