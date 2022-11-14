@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "641799443978",
+    "project_id": "khalihaan-fda79",
+    "storage_bucket": "khalihaan-fda79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641799443978:android:8414a35ba9dffc8982f1f3",
+        "android_client_info": {
+          "package_name": "com.maliknajeeb.khalihaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641799443978-di0fk3lmib32hjb28jo0i82upmu2l80h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJNBGfMXMcju29OrnKcjsapToZQsv5vBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641799443978-di0fk3lmib32hjb28jo0i82upmu2l80h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
